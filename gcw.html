@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gcw.css">
+</head>
+<body>
+<!--HamBurger Icon-->
+<div class="bars" id="nav-action">
+    <span class="bar"> </span>
+  </div>
+  
+  <!--Navbar Links-->
+  <nav id="nav">
+    <ul>
+      <li class="shape-circle circle-one"><a href="#">Contact</a></li>
+      <li class="shape-circle circle-two"><a href="#">Blog</a></li>
+      <li class="shape-circle circle-three"><a href="#">Work</a></li>
+      <li class="shape-circle circle-five">
+        <a href="#">Home</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <!--Main Body Content-->
+  <article class="container">
+    <h1>Amin<br> khafan<br> site</h1>
+    <p>por shvand</p>
+    <a href="https://codepen.io/alexakasanjeev/pen/RPxGXY" target="_blank">Pair it With Horizontal Line Break</a>
+  </article>
+<script>
+    // Setting up the Variables
+var bars = document.getElementById("nav-action");
+var nav = document.getElementById("nav");
+
+
+//setting up the listener
+bars.addEventListener("click", barClicked, false);
+
+
+//setting up the clicked Effect
+function barClicked() {
+  bars.classList.toggle('active');
+  nav.classList.toggle('visible');
+}
+</script>  
+</body>
+</html>
